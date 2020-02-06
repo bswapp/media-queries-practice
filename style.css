@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+viewport {
+  height: 150%;
+}
+
+.background {
+  width: 100vw;
+  height: 85vh;
+  background-image: url(https://blackrockdigital.github.io/startbootstrap-agency/img/header-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.navbar {
+  width: 100vw;
+  height: 10%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #fed300;
+  font-family: "Kaushan Script", cursive;
+}
+
+.nav {
+  width: 45%;
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.navbar-item {
+  font-family: "Public Sans", sans-serif;
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.body-text {
+  padding-top: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+  align-content: space-around;
+  height: 35%;
+  width: 100vw;
+}
+
+.welcome {
+  font-size: 2.5rem;
+  font-style: italic;
+}
+
+.greeting {
+  font-size: 3.75rem;
+  font-family: "Public Sans", sans-serif;
+  font-weight: bolder;
+}
+
+.hamburger-button {
+  display: none;
+  color: black;
+  background: #f9cd36;
+  border: none;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+.hamburger {
+  max-height: 25px;
+  max-width: 25px;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.sidebar-list {
+  position: fixed;
+  top: -50vh;
+  right: 0;
+  background: black;
+  width: 100vw;
+  transition: 1s;
+  height: 200px;
+  /* overflow-y: hidden; */
+  /* z-index: -1; */
+  font-family: "Kulim Park", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: white;
+}
+
+.sidebar-list-item:active {
+  color: #f9cd36;
+}
+.sidebar-list-item {
+  padding-left: 10px;
+}
+
+.big-button {
+  height: 3rem;
+  width: 10rem;
+  background: #fed300;
+  font-size: 0.95rem;
+  font-family: "Public Sans", sans-serif;
+  font-weight: 900;
+  border: none;
+  color: white;
+  border-radius: 5px;
+}
+
+@media (max-width: 990px) {
+  .nav {
+    display: none;
+  }
+  .hamburger-button {
+    display: block;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  input[type="checkbox"]:checked ~ .sidebar-list {
+    top: 10vh;
+  }
+}
+
+@media (min-width: 991px) {
+}
+
+@media (max-width: 690px) {
+  .greeting {
+    font-size: 2rem;
+  }
+  .welcome {
+    font-size: 1.75rem;
+  }
+}
